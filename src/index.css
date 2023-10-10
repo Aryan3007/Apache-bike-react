@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kawasaki{
+  font-size: 18vh;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
+  position: absolute;
+  top: 28%;
+  pointer-events: none;
+  filter: blur(1px);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+.image{
+  filter: contrast(50px);
+  /* background-color: aqua; */
+  position: absolute;
+  top: 25%;
+}
+.details{
+  padding:0px 100px;
+  position: absolute;
+  bottom: 8%;
+  justify-content: space-between;
+}
+.nextbtn:hover{
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+.footer{
+  position: absolute;
+  bottom: 1.5%;
+}
+.icons:hover{
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+}
+.shadow{
+  background-color: black;
+  filter: blur(20px);
+  position: absolute;
+  top: 72%;
+  right: 30%;
+}
+.btnmob{
+  display: none;
+}
+.drag{
+pointer-events: none;}
+.nn{
+  display: none;
+}
+
+@media (max-width:600px) {
+
+  .para{
+    display: none;
+  }
+  .btnmob{
+    display: flex;
+  }
+  .btnpc{
+    display: none;
+  }
+  .col{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .namediv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color:green ; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .downdetail{
+    width: 100%;
+  }
+  .btns{
+    width: 100%;
+    /* background-color: aqua; */
+    margin: 0px;
+  }
+  #slider{
+    transform: scale(0.8);
+  }
+  .kawasaki{
+    font-size: 35px;
+  }
+  #nameslider{
+    /* background-color: aquamarine; */
+    height: 50px;
+    filter: blur(0px);
+    display: none;
+  }
+}
